@@ -35,7 +35,7 @@
 
 ```
 ModelsDisabler_OCV2/
-├── opencode.json          # тестовый конфиг проекта (plugins:["./plugin"])
+├── opencode.json          # пустой проектный конфиг (только $schema); плагин подключается глобально
 ├── install.bat            # установка плагина в глобальный каталог OpenCode (Windows)
 ├── plugin/
 │   ├── index.js           # сам плагин (чистый JS, без внешних зависимостей)
