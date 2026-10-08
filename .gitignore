@@ -1,0 +1,11 @@
+# Локальные артефакты
+tmp/
+*.log
+context-debug.log
+models-disabler-debug.log
+
+# Node
+node_modules/
+
+# Бэкапы конфигов
+*.bak
