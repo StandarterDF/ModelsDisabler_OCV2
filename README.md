@@ -18,6 +18,9 @@
   id, заканчивающийся на `-free`);
 - для `opencode-go` дополнительно оставляет платные модели, входящие в
   подписку: `deepseek-v4.1-flash`, `mimo-v2.6-flash`, `glm-5.3-flash`;
+- оставляет включёнными Muse Spark: `opencode/muse-spark-1.3`,
+  `opencode/muse-spark-1.2`, `opencode-go/muse-spark-1.3-contributor`,
+  `opencode-go/muse-spark-1.2-contributor`;
 - **не трогает** провайдеров, добавленных пользователем (LocalAI, OpenRouter
   и т.п.);
 - не имеет внешних зависимостей, не ходит в сеть и не держит таймеров:

@@ -1,5 +1,11 @@
 # Изменения (незакоммичено)
 
+## 0.2.0
+
+- Muse Spark разблокирован в обоих провайдерах: `opencode/muse-spark-1.3`,
+  `opencode/muse-spark-1.2`, `opencode-go/muse-spark-1.3-contributor`,
+  `opencode-go/muse-spark-1.2-contributor` добавлены в allowlist по умолчанию.
+
 ## 0.1.0
 
 - Первая версия плагина `opencode.models-disabler`.

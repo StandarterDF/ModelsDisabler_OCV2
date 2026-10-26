@@ -9,7 +9,7 @@
 //   * paid models are disabled;
 //   * an explicit allowlist keeps selected paid models — by default the ones
 //     included in the OpenCode Go plan (DeepSeek V4.1 Flash, MiMo V2.6 Flash,
-//     GLM-5.3 Flash).
+//     GLM-5.3 Flash) plus the Muse Spark models.
 //
 // Providers added by the user (LocalAI, OpenRouter, ...) are never touched.
 //
@@ -22,9 +22,16 @@ import { appendFileSync } from "node:fs"
 const DEFAULT_PROVIDERS = ["opencode", "opencode-go"]
 
 // Paid models that stay enabled anyway (in addition to every free model).
+// Muse Spark: Console (opencode) and OpenCode Go contributor tiers.
 const DEFAULT_KEEP = {
-  opencode: [],
-  "opencode-go": ["deepseek-v4.1-flash", "mimo-v2.6-flash", "glm-5.3-flash"],
+  opencode: ["muse-spark-1.3", "muse-spark-1.2"],
+  "opencode-go": [
+    "deepseek-v4.1-flash",
+    "mimo-v2.6-flash",
+    "glm-5.3-flash",
+    "muse-spark-1.3-contributor",
+    "muse-spark-1.2-contributor",
+  ],
 }
 
 // Optional debug log file. Set MODELS_DISABLER_DEBUG to a path to enable.
